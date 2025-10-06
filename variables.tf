@@ -44,6 +44,7 @@ variable "groups" {
 variable "applications" {
   description = "Applications provisioned with Station"
   type = map(object({
+    id        = string
     client_id = string
     object_id = string
   }))
